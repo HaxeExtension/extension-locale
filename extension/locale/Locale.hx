@@ -10,13 +10,24 @@ class Locale {
 		#elseif (flash || openfl)
 			function():String return flash.system.Capabilities.language;
 		#else
-			function():String return null;
+			function():String return 'en';
 		#end
 
 	public static function getLangCode():String{
-		var res:String=_getLangCode();
-		if (res==null) return null;
-		return StringTools.replace(res,'_','-');
+		return StringTools.replace(_getLangCode(),'_','-');
 	}
+
+
+	public static function getSmartLangCode():String {
+		var lang=getLangCode().toLowerCase().substring(0,7);
+		if(lang.substring(0,2)=='zh'){
+			if(lang=='zh-hans' || lang=='zh-cn' || lang=='zh-sg' || lang=='zh-my' || lang=='zh-rcn' || lang=='zh-rsg' || lang=='zh-rmy'){
+				return 'zh-hans';
+			}
+			return 'zh-hant';
+		}
+		return lang.substring(0,2);
+	}
+
 
 }
