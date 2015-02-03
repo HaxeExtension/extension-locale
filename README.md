@@ -62,6 +62,6 @@ haxelib install openfl-locale
 
 The MIT License (MIT) - [LICENSE.md](LICENSE.md)
 
-Copyright (c) 2015 SempaiGames (http://www.sempaigames.com)
+Copyright &copy; 2015 SempaiGames (http://www.sempaigames.com)
 
 Author: Federico Bricker
