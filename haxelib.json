@@ -1,7 +1,7 @@
 {
         "name": "openfl-locale",
         "url": "https://github.com/fbricker/openfl-locale",
-        "license": "GPL",
+        "license": "MIT",
         "contributors":["fbricker"],
         "tags": ["locale","api","ios","languaje","android","openfl"],
         "description": "Tools for localizing your OpenFL APP.",
