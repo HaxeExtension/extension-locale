@@ -1,6 +1,6 @@
 {
-        "name": "openfl-locale",
-        "url": "https://github.com/fbricker/openfl-locale",
+        "name": "extension-locale",
+        "url": "https://github.com/fbricker/extension-locale",
         "license": "MIT",
         "contributors":["fbricker"],
         "tags": ["locale","api","ios","languaje","android","openfl"],

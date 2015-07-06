@@ -1,4 +1,4 @@
-# openfl-locale
+# extension-locale
 Tools for localizing your OpenFL APP.
 
 This is a simple "Localization" class to help you better localize your Lime/OpenFL App.
@@ -55,7 +55,7 @@ class SimpleExample
 ###How to Install
 
 ```bash
-haxelib install openfl-locale
+haxelib install extension-locale
 ```
 
 ###License
