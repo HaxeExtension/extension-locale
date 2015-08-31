@@ -5,6 +5,6 @@
         "contributors":["fbricker"],
         "tags": ["locale","api","ios","languaje","android","openfl"],
         "description": "Tools for localizing your OpenFL APP.",
-        "version": "1.0.0",
-        "releasenote": "Initial release."
+        "version": "1.0.1",
+        "releasenote": "Fix uppercase in include.xml."
 }
