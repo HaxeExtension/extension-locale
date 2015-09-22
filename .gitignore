@@ -1,2 +1,4 @@
 *.zip
 project/obj
+test/Export
+
