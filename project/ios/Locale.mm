@@ -1,5 +1,7 @@
 #include <Locale.h>
-#import <UIKit/UIKit.h>
+#include "Foundation/NSLocale.h"
+#include "Foundation/NSString.h"
+#include "Foundation/NSArray.h"
 
 namespace openflLocaleExtension {
 	

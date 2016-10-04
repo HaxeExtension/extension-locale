@@ -3,7 +3,7 @@
 	<section if="android">
 		<include path="java/LocaleEx/include.xml" />
 	</section>
-	<section if="ios">
+	<section if="ios || mac">
 		<ndll name="openflLocaleExtension" />
 		<ios linker-flags="-v" />
 	</section>

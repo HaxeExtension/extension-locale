@@ -5,8 +5,10 @@ class Locale {
 	private static var _getLangCode:Void->String =
 		#if android
 			openfl.utils.JNI.createStaticMethod("localeExtension/Locale", "getLangCode", "()Ljava/lang/String;");
-		#elseif ios
+		#elseif (ios || mac)
 			cpp.Lib.load("openflLocaleExtension","get_lang_code",0);
+		#elseif (html5)
+			function():String return js.Browser.window.navigator.language;
 		#elseif (flash || openfl)
 			function():String return flash.system.Capabilities.language;
 		#else

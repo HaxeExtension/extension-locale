@@ -5,7 +5,6 @@
 	
 	<files id="common">		
 		<compilerflag value="-Iinclude"/>
-		<compilerflag value="-Iios/include" />
 		<file name="common/ExternalInterface.cpp"/>
 		<file name="ios/Locale.mm" />
 	</files>
