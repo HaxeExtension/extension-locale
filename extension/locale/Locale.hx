@@ -5,6 +5,10 @@ class Locale {
 	private static var _getLangCode:Void->String =
 		#if android
 			openfl.utils.JNI.createStaticMethod("localeExtension/Locale", "getLangCode", "()Ljava/lang/String;");
+		#elseif (openfl && neko)
+			function():String return openfl.system.Capabilities.language;
+		#elseif (neko)
+			function():String return 'en';
 		#elseif (ios || mac)
 			cpp.Lib.load("openflLocaleExtension","get_lang_code",0);
 		#elseif (html5)
