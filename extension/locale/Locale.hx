@@ -4,7 +4,11 @@ class Locale {
 
 	private static var _getLangCode:Void->String =
 		#if android
-			openfl.utils.JNI.createStaticMethod("localeExtension/Locale", "getLangCode", "()Ljava/lang/String;");
+			function():String {
+				var getDefault:Void->Dynamic = openfl.utils.JNI.createStaticMethod("java/util/Locale", "getDefault", "()Ljava/util/Locale;");
+				var toString:Dynamic->String = openfl.utils.JNI.createMemberMethod("java/util/Locale", "toString", "()Ljava/lang/String;");
+				return toString(getDefault());
+			}
 		#elseif (openfl && neko)
 			function():String return openfl.system.Capabilities.language;
 		#elseif (neko)

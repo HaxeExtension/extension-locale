@@ -5,4 +5,4 @@ rm -f extension-locale.zip
 rm -rf project/obj
 lime rebuild . ios && lime rebuild . mac
 rm -rf project/obj
-zip -r extension-locale.zip extension haxelib.json include.xml java ndll project
+zip -r extension-locale.zip extension haxelib.json include.xml ndll project

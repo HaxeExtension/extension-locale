@@ -5,6 +5,6 @@
         "contributors":["fbricker"],
         "tags": ["locale","api","ios","languaje","android","openfl","mac","html5"],
         "description": "Tools for localizing your OpenFL APP.",
-        "version": "1.0.2",
-        "releasenote": "Add support for Mac & HTML5."
+        "version": "1.0.3",
+        "releasenote": "Make pure JNI implementation for Android (remove java folder)."
 }
