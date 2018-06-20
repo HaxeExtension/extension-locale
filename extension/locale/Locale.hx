@@ -1,12 +1,20 @@
 package extension.locale;
 
+#if android
+	#if (openfl < "4.0.0")
+	import openfl.utils.JNI;
+	#else
+	import lime.system.JNI;
+	#end
+#end
+
 class Locale {
 
 	private static var _getLangCode:Void->String =
 		#if android
 			function():String {
-				var getDefault:Void->Dynamic = openfl.utils.JNI.createStaticMethod("java/util/Locale", "getDefault", "()Ljava/util/Locale;");
-				var toString:Dynamic->String = openfl.utils.JNI.createMemberMethod("java/util/Locale", "toString", "()Ljava/lang/String;");
+				var getDefault:Void->Dynamic = JNI.createStaticMethod("java/util/Locale", "getDefault", "()Ljava/util/Locale;");
+				var toString:Dynamic->String = JNI.createMemberMethod("java/util/Locale", "toString", "()Ljava/lang/String;");
 				return toString(getDefault());
 			}
 		#elseif (openfl && neko)
