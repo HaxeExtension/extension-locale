@@ -4,8 +4,8 @@ Tools for localizing your OpenFL APP.
 This is a simple "Localization" class to help you better localize your Lime/OpenFL App.
 
 So far it provides two methods:
-* Locale.getLangCode():String
-* Locale.getSmartLangCode():String
+* `Locale.getLangCode():String`
+* `Locale.getSmartLangCode():String`
 
 getLangCode() will return the locale code as the OS informs. It may return in different ways:
 Example:
@@ -29,7 +29,7 @@ zh-hans
 zh-hant
 ```
 
-###Simple use Example
+### Simple use Example
 
 ```haxe
 
@@ -52,13 +52,13 @@ class SimpleExample
 
 ```
 
-###How to Install
+### How to Install
 
 ```bash
 haxelib install extension-locale
 ```
 
-###License
+### License
 
 The MIT License (MIT) - [LICENSE.md](LICENSE.md)
 
